@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while (true) {
+           let text=prompt('nhập text');
+          
+          function checkDoixung() {
+           let input=text.split('').reverse().join('');
+          
+           console.log(input);
+           if (text===input) {
+              return alert(`${text} đối xứng`);
+           } else {
+               return alert(`${text} không đối xứng`);
+           }
+          }
+          checkDoixung()
+        }
+       </script>
+</body>
+</html>
